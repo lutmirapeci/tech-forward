@@ -1,0 +1,26 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+/* #region main */
+
+.speakers-main {
+  @extend %wrap-l;
+  @extend %section-xl;
+
+  // media query
+
+  @include mix.mobile-styles {
+    width: 90%;
+    padding-bottom: var.$gutter-base;
+  }
+
+  @include mix.tablet-styles {
+    width: 90%;
+  }
+
+  @include mix.laptop-m-styles {
+    width: 90%;
+  }
+}
+
+/* #endregion main */

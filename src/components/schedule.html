@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechForward 2024</title>
+    <!-- Compiled and minified CSS bundles -->
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css" />
+    <!-- custom styles-->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/ef99608374.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- #region header -->
+    <header id="header">
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html">TechForward 2024</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a href="../../index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="./about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="./schedule.html" class="nav-link">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a href="./speakers.html" class="nav-link">Speakers</a>
+              </li>
+              <li class="nav-item hide-register">
+                <a href="./register.html" class="nav-link">Register</a>
+              </li>
+              <li class="nav-item">
+                <a href="./contact.html" class="nav-link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- #endregion header -->
+
+    <!-- #region main -->
+    <main class="schedule-main">
+      <!-- #region intro -->
+      <section id="schedule-intro">
+        <h1 class="text-center">Conference Schedule</h1>
+        <p class="text-center">Explore the detailed agenda for the TechForward 2024.</p>
+      </section>
+      <!-- #endregion intro -->
+
+      <!-- #region schedule -->
+      <section id="schedule">
+        <div class="schedule-container mt-5">
+          <ul class="nav nav-tabs" id="schedule-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="day1-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#day1"
+                type="button"
+                role="tab"
+                aria-controls="day1"
+                aria-selected="true"
+              >
+                Day 1
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="day2-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#day2"
+                type="button"
+                role="tab"
+                aria-controls="day2"
+                aria-selected="false"
+              >
+                Day 2
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content mt-3" id="schedule-tabContent">
+            <!-- #region Day 1 -->
+            <div
+              class="tab-pane fade show active"
+              id="day1"
+              role="tabpanel"
+              aria-labelledby="day1-tab"
+            >
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">Time</th>
+                      <th scope="col">Session</th>
+                      <th scope="col">Speaker</th>
+                      <th scope="col">Location</th>
+                      <th scope="col">Type</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>09:00 - 10:00</td>
+                      <td>
+                        <i class="fa-solid fa-robot"></i> Opening Keynote: The Future of Robotics
+                      </td>
+                      <td>Emily Hart</td>
+                      <td>Main Hall</td>
+                      <td>
+                        <span class="badge keynote">
+                          <i class="fa-solid fa-microphone"></i> Keynote
+                        </span>
+                      </td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <td>10:00 - 10:15</td>
+                      <td><i class="fa-solid fa-mug-saucer"></i> Coffee Break</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>10:15 - 11:15</td>
+                      <td>
+                        <i class="fa-solid fa-cloud"></i> Cloud Computing: Next-Gen Architectures
+                      </td>
+                      <td>Ethan Wallace</td>
+                      <td>Conference Room A</td>
+                      <td>
+                        <span class="badge talk">
+                          <i class="fa-solid fa-chalkboard-user"></i> Talk
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>11:30 - 12:30</td>
+                      <td>
+                        <i class="fa-solid fa-brain"></i> Quantum Computing: Demystifying the Future
+                      </td>
+                      <td>David Miller</td>
+                      <td>Conference Room B</td>
+                      <td>
+                        <span class="badge talk">
+                          <i class="fa-solid fa-chalkboard-user"></i> Talk
+                        </span>
+                      </td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <td>12:30 - 14:30</td>
+                      <td><i class="fa-solid fa-utensils"></i> Lunch Break</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>14:30 - 15:30</td>
+                      <td><i class="fa-solid fa-robot"></i> AI for a Better Tomorrow</td>
+                      <td>Lily Zhang</td>
+                      <td>Main Hall</td>
+                      <td>
+                        <span class="badge keynote">
+                          <i class="fa-solid fa-microphone"></i> Keynote
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>15:30 - 16:30</td>
+                      <td><i class="fa-solid fa-lock"></i> Cloud Security Essentials</td>
+                      <td>Michael Anderson</td>
+                      <td>Conference Room A</td>
+                      <td>
+                        <span class="badge keynote">
+                          <i class="fa-solid fa-microphone"></i> Keynote
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- #endregion Day 1 -->
+            <!-- #region Day 2 -->
+            <div class="tab-pane fade" id="day2" role="tabpanel" aria-labelledby="day2-tab">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">Time</th>
+                      <th scope="col">Session</th>
+                      <th scope="col">Speaker</th>
+                      <th scope="col">Location</th>
+                      <th scope="col">Type</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>09:00 - 10:00</td>
+                      <td>
+                        <i class="fa-solid fa-seedling"></i> Innovations in Environmental Tech
+                      </td>
+                      <td>Christopher Brooks</td>
+                      <td>Main Hall</td>
+                      <td>
+                        <span class="badge keynote">
+                          <i class="fa-solid fa-microphone"></i> Keynote
+                        </span>
+                      </td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <td>10:00 - 10:15</td>
+                      <td><i class="fa-solid fa-mug-saucer"></i> Coffee Break</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>10:15 - 11:15</td>
+                      <td><i class="fa-solid fa-users"></i> Empowering Diversity in Tech</td>
+                      <td>Naomi Rivera</td>
+                      <td>Conference Room A</td>
+                      <td>
+                        <span class="badge talk">
+                          <i class="fa-solid fa-chalkboard-user"></i> Workshop
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>11:30 - 12:30</td>
+                      <td>
+                        <i class="fa-solid fa-vr-cardboard"></i> Exploring Virtual Reality in
+                        Education
+                      </td>
+                      <td>Michael Anderson</td>
+                      <td>Conference Room B</td>
+                      <td>
+                        <span class="badge talk">
+                          <i class="fa-solid fa-chalkboard-user"></i> Workshop
+                        </span>
+                      </td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <td>12:30 - 14:30</td>
+                      <td><i class="fa-solid fa-utensils"></i> Lunch Break</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>14:30 - 15:30</td>
+                      <td>
+                        <i class="fa-solid fa-cloud"></i> Cloud Computing: Scalability & Efficiency
+                      </td>
+                      <td>Ethan Wallace</td>
+                      <td>Main Hall</td>
+                      <td>
+                        <span class="badge keynote">
+                          <i class="fa-solid fa-microphone"></i> Keynote
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>15:30 - 16:30</td>
+                      <td>
+                        <i class="fa-solid fa-brain"></i> AI Innovations: Ethical Implications
+                      </td>
+                      <td>Lily Zhang</td>
+                      <td>Conference Room A</td>
+                      <td>
+                        <span class="badge talk">
+                          <i class="fa-solid fa-chalkboard-user"></i> Talk
+                        </span>
+                      </td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <td>16:30 - 17:00</td>
+                      <td><i class="fa-solid fa-handshake"></i> Closing Statement</td>
+                      <td>Event Organizers</td>
+                      <td>Main Hall</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- #endregion Day 2 -->
+          </div>
+        </div>
+      </section>
+      <!-- #endregion schedule -->
+    </main>
+    <!-- #endregion main -->
+
+    <!-- #region footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center mt-5">
+          <div class="col">
+            <p>Follow us on social media:</p>
+            <ul class="d-flex m-0 p-0">
+              <li>
+                <a href="https://www.twitter.com/"> <i class="fab fa-twitter"></i> Twitter </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/"> <i class="fab fa-facebook-f"></i> Facebook </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <i class="fab fa-instagram"></i>
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/">
+                  <i class="fab fa-linkedin-in"></i> LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <p>Quick links:</p>
+            <ul class="d-flex m-0 p-0">
+              <li class="nav-item">
+                <a href="../../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="./schedule.html">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a href="./speakers.html">Speakers</a>
+              </li>
+              <li class="nav-item hide-register">
+                <a href="./register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a href="./contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row d-flex mt-5">
+          <p class="text-center">TechForward 2024 © All rights reserved.</p>
+        </div>
+        <div class="row d-flex">
+          <p class="text-end">
+            <a id="back-link" href="#header">Back to top</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- #endregion footer -->
+
+    <!-- #region scripts -->
+
+    <!-- Compiled and minified JavaScript plugins -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Countdown Script -->
+    <script src="../scripts/countdown.js"></script>
+
+    <!-- Navigate to Registration Page Script -->
+    <script src="../scripts/navigation.js"></script>
+
+    <!-- #endregion scripts -->
+  </body>
+</html>

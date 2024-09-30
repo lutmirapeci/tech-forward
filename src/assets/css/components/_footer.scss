@@ -1,0 +1,64 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+/* #endregion footer */
+
+footer {
+  .container-fluid {
+    @extend %wrap-l;
+    @extend %section-s;
+
+    p {
+      color: var.$text-color-secondary;
+      font-size: var.$font-size-base;
+
+      #back-link:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // media query
+
+  @include mix.mobile-styles {
+    .container-fluid {
+      width: 95%;
+
+      .col:not(:first-child) {
+        margin-top: calc(var.$gutter-base/2);
+      }
+
+      p,
+      a {
+        font-size: var.$font-size-small;
+      }
+    }
+  }
+
+  @include mix.tablet-styles {
+    .container-fluid {
+      width: 98%;
+
+      .col:not(:first-child) {
+        margin-top: calc(var.$gutter-base/2);
+      }
+
+      p,
+      a {
+        font-size: var.$font-size-base;
+      }
+    }
+  }
+
+  @include mix.laptop-m-styles {
+    .container-fluid {
+      width: 95%;
+      p,
+      a {
+        font-size: var.$font-size-base;
+      }
+    }
+  }
+}
+
+/* #endregion footer */

@@ -1,0 +1,44 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+/* #region main */
+
+.contact-main {
+  @extend %wrap-l;
+  @extend %section-xl;
+
+  .contact-information {
+    height: 75%;
+  }
+
+  // media query
+
+  @include mix.mobile-styles {
+    width: 94%;
+
+    .inquiries {
+      padding-top: calc(var.$gutter-base * 2.5);
+    }
+  }
+
+  @include mix.tablet-styles {
+    width: 90%;
+    .inquiries {
+      padding-top: calc(var.$gutter-base * 2.5);
+    }
+  }
+
+  @include mix.laptop-m-styles {
+    width: 90%;
+  }
+}
+
+// I added this because in Contact Page the link of Registration page in footer changed the color
+
+footer {
+  .nav-item {
+    color: var.$text-color-tertiary;
+  }
+}
+
+/* #endregion main */

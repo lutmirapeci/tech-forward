@@ -1,0 +1,76 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+/* #region header-background */
+
+.header-background {
+  @extend %section-xl;
+
+  background: url(../images/banner.jpg) center no-repeat;
+  background-size: cover;
+  height: calc(var.$gutter-base * 16);
+
+  .container-fluid {
+    @extend %wrap-s;
+    @extend %section-s;
+
+    h1 {
+      color: var.$text-color-primary;
+    }
+
+    h5 {
+      color: var.$text-color-primary;
+      font-size: var.$font-size-large;
+    }
+
+    button {
+      font-size: var.$font-size-medium;
+    }
+  }
+
+  // media query
+
+  @include mix.mobile-styles {
+    height: calc(var.$gutter-base * 15);
+    .container-fluid {
+      width: 95%;
+
+      h5 {
+        font-size: var.$font-size-medium;
+      }
+
+      button {
+        font-size: var.$font-size-small;
+      }
+    }
+  }
+
+  @include mix.tablet-styles {
+    height: calc(var.$gutter-base * 18);
+    .container-fluid {
+      width: 80%;
+
+      h5 {
+        font-size: var.$font-size-large;
+      }
+
+      button {
+        font-size: var.$font-size-base;
+      }
+    }
+  }
+
+  @include mix.laptop-m-styles {
+    .container-fluid {
+      h5 {
+        font-size: var.$font-size-larger;
+      }
+
+      button {
+        font-size: var.$font-size-medium;
+      }
+    }
+  }
+}
+
+/* #endregion header-background */

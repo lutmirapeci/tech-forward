@@ -1,0 +1,100 @@
+@use "./variables" as var;
+@use "sass:math";
+
+@mixin four-k-styles {
+  @media (max-width: 2560px) {
+    @content;
+  }
+}
+
+@mixin laptop-l-styles {
+  @media (max-width: 1550px) {
+    @content;
+  }
+}
+
+@mixin laptop-m-styles {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet-styles {
+  @media screen and (min-width: 432px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile-styles {
+  @media screen and (min-width: 321px) and (max-width: 431px) {
+    @content;
+  }
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+%row-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%wrap-s {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%wrap-m {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%wrap-l {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%wrap-xl {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%wrap-xxl {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%section-s {
+  padding-top: calc(var.$gutter-base/3);
+  padding-bottom: calc(var.$gutter-base/3);
+}
+
+%section-m {
+  padding-top: var.$gutter-base;
+  padding-bottom: var.$gutter-base;
+}
+
+%section-l {
+  padding-top: calc(var.$gutter-base * 2);
+  padding-bottom: calc(var.$gutter-base * 2);
+}
+
+%section-xl {
+  padding-top: calc(var.$gutter-base * 4);
+  padding-bottom: calc(var.$gutter-base * 4);
+}

@@ -1,0 +1,56 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+/* #region main */
+
+.about-main {
+  @extend %wrap-l;
+  @extend %section-xl;
+
+  /* #region organisers */
+
+  #organisers {
+    span {
+      color: var.$text-color-secondary;
+    }
+  }
+  /* #endregion organisers */
+
+  /* #region gallery */
+
+  #gallery {
+    .card {
+      height: 100%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.1s ease-in-out;
+      }
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+  }
+  /* #endregion gallery */
+
+  // media query
+
+  @include mix.mobile-styles {
+    width: 90%;
+    padding-bottom: var.$gutter-base;
+  }
+
+  @include mix.tablet-styles {
+    width: 94%;
+  }
+
+  @include mix.laptop-m-styles {
+    width: 90%;
+  }
+}
+/* #endregion main */

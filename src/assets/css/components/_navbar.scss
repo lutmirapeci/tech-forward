@@ -1,0 +1,62 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+/* #region navbar */
+
+nav {
+  .container-fluid {
+    @extend %wrap-l;
+    @extend %section-s;
+
+    .navbar-brand {
+      color: var.$text-color-base;
+      font-size: var.$font-size-larger;
+    }
+    .nav-link {
+      color: var.$text-color-secondary;
+      font-size: var.$font-size-medium;
+    }
+  }
+
+  // media query
+
+  @include mix.mobile-styles {
+    .container-fluid {
+      width: 90%;
+
+      .navbar-brand {
+        font-size: var.$font-size-large;
+      }
+
+      .nav-link {
+        font-size: var.$font-size-small;
+      }
+    }
+  }
+
+  @include mix.tablet-styles {
+    .container-fluid {
+      width: 95%;
+
+      .navbar-brand {
+        font-size: var.$font-size-larger;
+      }
+
+      .nav-link {
+        font-size: var.$font-size-medium;
+      }
+    }
+  }
+
+  @include mix.laptop-m-styles {
+    .container-fluid {
+      width: 98%;
+
+      .nav-link {
+        font-size: var.$font-size-small;
+      }
+    }
+  }
+}
+
+/* #endregion navbar */
